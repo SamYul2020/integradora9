@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:deviceIds="wear_round">
+    tools:context=".RegistroO">
+
+    <TextView
+        android:id="@+id/oxigenoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="--"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <ImageView
+        android:id="@+id/oxigenoImage"
+        android:layout_width="233dp"
+        android:layout_height="62dp"
+        android:layout_above="@id/oxigenoText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/oxigeno" />
+
+    <TextView
+        android:id="@+id/spText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpO2"
+        android:textColor="@color/black"
+        android:layout_below="@id/oxigenoText"
+        android:layout_marginLeft="3dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow_white_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spText"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pause_white_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spText"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
